@@ -1,0 +1,7 @@
+!pip install quandl
+
+import quandl
+
+quandl.ApiConfig.api_key = 'your_api_key'
+data = quandl.set("NSE/TATAGLOBAL")
+data.head(10)
