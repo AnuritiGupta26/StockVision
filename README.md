@@ -1,4 +1,4 @@
-# StockVision : Stock Price Prediction Model with KNN**
+# StockVision : Stock Price Prediction Model with KNN
 StockVision is an AI-powered stock price prediction model that leverages machine learning algorithms to forecast the future performance of stocks. The project utilizes historical market data, including stock prices, volumes, and other market indicators, to predict price trends and provide valuable insights for investors.
 
 This project showcases how KNN algorithms can be used to handle both regression (predicting continuous stock prices) and classification (predicting whether a stock's price will go up or down) tasks. The model helps users understand the direction of stock price movements and provides actionable insights for investment decisions.
