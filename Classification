@@ -1,0 +1,19 @@
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn import neighbors
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import accuracy_score
+
+#using gridsearch to fing the best parameter, value of k {mini no. of neigh}
+params = {'n_neighbors': [2,3,4,5,6,7,8,9,10,11,12,13,14,15]} # Changed 'n_neighbours' to 'n_neighbors'
+knn = neighbors.KNeighborsClassifier()
+model = GridSearchCV(knn, params, cv=5)
+
+#fit the model 
+model.fit(x_train,y_train)
+
+#accuracy score
+accuracy_train = accuracy_score(y_train, model.predict(x_train))
+accuracy_test = accuracy_score(y_test, model.predict(x_test))
+
+print('Train_data Accuracy: %.2f' %accuracy_train)
+print('Test_data Accuracy: %.2f' %accuracy_test)
